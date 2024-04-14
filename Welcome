@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined Distribution - Select Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Undefined Distribution by ZiYX Music Group</h1>
+    </header>
+    <main>
+        <section class="plans">
+            <h2>Select a Plan</h2>
+            <div class="plan">
+                <h3>Single: $5.99/month</h3>
+                <p>1 Artist, Unlimited Releases, no custom release date.</p>
+                <button>Select Plan</button>
+            </div>
+            <div class="plan">
+                <h3>Doing My Big One: $10/month</h3>
+                <p>5 Artists, Unlimited Releases, Custom Release date.</p>
+                <button>Select Plan</button>
+            </div>
+            <div class="plan recommended">
+                <h3>Record Label: $20/month (Recommended)</h3>
+                <p>Custom Label, Custom Release Date, 95% of royalties, Custom Publisher information, Unlimited Releases, 15 Artists.</p>
+                <button>Select Plan</button>
+            </div>
+            <div class="plan">
+                <h3>PREMIUM PACKAGE: Major Record Label - $35/month</h3>
+                <p>All of the Record Label plan + Unlimited Artists and 100% of royalties.</p>
+                <button>Select Plan</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>All Plans include copyright insurance!</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.plan {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.plan h3 {
+    margin-top: 0;
+}
+
+.plan.recommended {
+    background-color: #ffd700;
+}
+
